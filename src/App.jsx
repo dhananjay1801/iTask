@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import Navbar from './components/Navbar'
+import Footer from './components/Footer';
 import { v4 as uuidv4 } from 'uuid';
 import { MdModeEdit, MdDeleteForever } from "react-icons/md";
 
@@ -83,7 +84,7 @@ function App() {
     return (
         <>
             <Navbar />
-            <div className="md:container md:mx-auto m-8 rounded-xl p-5 bg-violet-100 min-h-[80vh] xl:w-1/2 shadow-[0_0_15px_rgba(0,0,0,0.3)]">
+            <div className="md:container md:mx-auto m-8 rounded-xl p-5 bg-violet-100 min-h-[73vh] xl:w-1/2 shadow-[0_0_15px_rgba(0,0,0,0.3)]">
                 <div className="addTodo my-5 flex flex-col gap-4">
                     <h2 className='text-lg font-bold'>Add a Todo</h2>
                     <input onChange={handleChange} ref={inputRef} value={todo} type="text" onKeyDown={handleEnter} className='bg-white w-full rounded-md px-2 py-1 focus:border-violet-700 outline-none border-violet-400 border-2' />
@@ -117,6 +118,7 @@ function App() {
                     })}
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }
