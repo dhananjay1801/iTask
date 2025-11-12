@@ -2,6 +2,8 @@
 
 iTask is a simple React + Vite todo manager that helps you jot down tasks, mark them complete, and store everything locally in the browser.
 
+**Live Demo:** [https://itask-brown.vercel.app/](https://itask-brown.vercel.app/)
+
 ## Technologies Used
 
 - **React** (v19.2.0) - UI library
