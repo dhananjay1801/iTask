@@ -1,16 +1,36 @@
-# React + Vite
+# iTask
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+iTask is a simple React + Vite todo manager that helps you jot down tasks, mark them complete, and store everything locally in the browser.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** (v19.2.0) - UI library
+- **Vite** (v7.2.2) - Build tool and dev server
+- **Tailwind CSS** (v4.1.17) - Utility-first CSS framework
+- **React Icons** (v5.5.0) - Icon library
+- **UUID** (v13.0.0) - Unique ID generation
+- **ESLint** - Code linting
+- **Local Storage** - Browser storage for data persistence
 
-## React Compiler
+## Features
+- Create, edit, delete, and complete todos
+- Toggle visibility of finished tasks
+- Automatic persistence via Local Storage
+- Tailwind-powered styling with a custom Google font
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js 18+ and npm
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+```bash
+npm install
+```
+
+### Development
+```bash
+npm run dev
+```
+
+Open the local development URL printed in the terminal to start using iTask.
